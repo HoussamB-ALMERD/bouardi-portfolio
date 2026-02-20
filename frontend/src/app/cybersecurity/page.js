@@ -1,7 +1,7 @@
 // frontend/src/app/cybersecurity/page.js
 
 import Link from "next/link";
-import { ShieldCheck, ArrowLeft, GraduationCap, FileText, Cpu, Bug } from "lucide-react";
+import { ShieldCheck, ArrowLeft, GraduationCap, FileText, Cpu } from "lucide-react";
 
 export default function CyberPage() {
   return (
@@ -46,7 +46,7 @@ export default function CyberPage() {
 
         {/* DoberMan - Flagship */}
         <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-sky-500 transition-colors group md:col-span-2">
-          <Bug className="w-12 h-12 text-red-500 mb-4 group-hover:scale-110 transition-transform" />
+          <img src="/doberman-logo.png" alt="DoberMan Logo" className="w-12 h-12 mb-4 group-hover:scale-110 transition-transform" />
           <h3 className="text-2xl font-bold mb-2">DoberMan &mdash; Edge-Deployed IPS for Critical IoMT</h3>
           <p className="text-gray-400">
             My magnum opus. An Intrusion Prevention System built for the Internet of Medical Things. Runs an ensemble model (Random Forest + Isolation Forest) with local LLMs (TinyLlama/Ollama) and SHAP-based Explainable AI for human-readable threat reports. Uses Linux Kernel tc for adaptive traffic throttling instead of binary blocking &mdash; because in medical infrastructure, dropping a packet can cost a life.
