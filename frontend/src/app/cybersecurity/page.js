@@ -1,7 +1,7 @@
 // frontend/src/app/cybersecurity/page.js
 
 import Link from "next/link";
-import { ShieldCheck, ArrowLeft, GraduationCap } from "lucide-react";
+import { ShieldCheck, ArrowLeft, GraduationCap, FileText, Cpu, Bug } from "lucide-react";
 
 export default function CyberPage() {
   return (
@@ -12,44 +12,48 @@ export default function CyberPage() {
       </Link>
 
       <div className="border-l-4 border-sky-500 pl-6 mb-16">
-        <h1 className="text-5xl font-bold mb-4 text-sky-500">Cybersecurity Protocols</h1>
+        <h1 className="text-5xl font-bold mb-4 text-sky-500">Edge AI &amp; Cybersecurity Research</h1>
         <p className="text-xl text-gray-400 max-w-2xl">
-          From CNDP ISO compliance to AI-driven Zero Day Defense.
-          My work ensures resilience in an interconnected world.
+          2nd-year PhD candidate. CNRST Excellence Scholar.
+          My thesis fuses AI with cybersecurity to build economically resilient defense systems for critical infrastructure. 5 papers. 1 deployed IPS. Zero cloud dependency.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        {/* Project 1: CNDP */}
+
+        {/* PhD Thesis */}
         <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-sky-500 transition-colors group">
-          <ShieldCheck className="w-12 h-12 text-sky-500 mb-4 group-hover:scale-110 transition-transform" />
-          <h3 className="text-2xl font-bold mb-2">CNDP Security Head</h3>
+          <GraduationCap className="w-12 h-12 text-sky-500 mb-4 group-hover:scale-110 transition-transform" />
+          <h3 className="text-2xl font-bold mb-2">PhD Thesis: AI &times; Cybersecurity</h3>
           <p className="text-gray-400">
-            Managed physical and network security for the CNDP building phase. Implemented ISO 27001 standards and automated alert systems for web agencies.
+            &ldquo;Integration of AI into Cybersecurity for Economical Resilience.&rdquo; Researching lightweight ML models for real-time threat detection on resource-constrained edge devices &mdash; where milliseconds determine breach or containment.
           </p>
         </div>
 
-        {/* Project 2: PhD */}
+        {/* Publications */}
         <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-sky-500 transition-colors group">
-          <ShieldCheck className="w-12 h-12 text-purple-500 mb-4 group-hover:scale-110 transition-transform" />
-          <h3 className="text-2xl font-bold mb-2">PhD: AI in Cyber</h3>
+          <FileText className="w-12 h-12 text-purple-500 mb-4 group-hover:scale-110 transition-transform" />
+          <h3 className="text-2xl font-bold mb-2">5 Academic Publications</h3>
           <p className="text-gray-400">
-            Current research on Economic Resilience and Zero-Day Defense for IoT/Edge devices using Artificial Intelligence.
-          </p>
-        </div>
-
-        {/* PROJECT 3: The Professor (Fixed Special Characters) */}
-        <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-sky-500 transition-colors group md:col-span-2">
-          <GraduationCap className="w-12 h-12 text-yellow-500 mb-4 group-hover:scale-110 transition-transform" />
-          <h3 className="text-2xl font-bold mb-2">Instructor at ENSAF</h3>
-          <p className="text-gray-400">
-            Teaching the next generation of engineers (1st to 5th year).
+            3 journal papers under review: Systematic Literature Review on Zero-Day IoT attacks, and lightweight edge intrusion detection for Mirai botnets using Random Forests.
             <br />
             <span className="text-sm font-mono text-gray-500 mt-2 block">
-              &gt; Algorithms &amp; Data Structures <br/>
-              &gt; Networking &amp; Architecture <br/>
-              &gt; Quality of Service (QoS)
+              &gt; ESAI&apos;25: AI-Enhanced Encryption vs Blockchain for Embedded Medical Imaging <br/>
+              &gt; ICOSES: Smart Mobility Services Architecture
+            </span>
+          </p>
+        </div>
+
+        {/* DoberMan - Flagship */}
+        <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-sky-500 transition-colors group md:col-span-2">
+          <Bug className="w-12 h-12 text-red-500 mb-4 group-hover:scale-110 transition-transform" />
+          <h3 className="text-2xl font-bold mb-2">DoberMan &mdash; Edge-Deployed IPS for Critical IoMT</h3>
+          <p className="text-gray-400">
+            My magnum opus. An Intrusion Prevention System built for the Internet of Medical Things. Runs an ensemble model (Random Forest + Isolation Forest) with local LLMs (TinyLlama/Ollama) and SHAP-based Explainable AI for human-readable threat reports. Uses Linux Kernel tc for adaptive traffic throttling instead of binary blocking &mdash; because in medical infrastructure, dropping a packet can cost a life.
+            <br />
+            <span className="text-sm font-mono text-gray-500 mt-2 block">
+              &gt; Stack: Python &bull; Scikit-learn &bull; Ollama &bull; SHAP &bull; Linux tc &bull; Edge Hardware <br/>
+              &gt; Status: Deployed. No cloud. No API calls. Pure edge inference.
             </span>
           </p>
         </div>

@@ -12,38 +12,38 @@ export default function CreativePage() {
       </Link>
 
       <div className="border-l-4 border-pink-500 pl-6 mb-16">
-        <h1 className="text-5xl font-bold mb-4 text-pink-500">Creative Direction</h1>
+        <h1 className="text-5xl font-bold mb-4 text-pink-500">HCI &amp; Visualization</h1>
         <p className="text-xl text-gray-400 max-w-2xl">
-          Optimizing Attention. I combine UI/UX, Motion Graphics, and CRO strategies to keep users engaged and converting.
+          Research without communication is incomplete. I design how complex systems are understood &mdash; from interactive interfaces to motion-based data narratives that make AI architectures legible to human reviewers.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        {/* Project 1 */}
+
+        {/* CRO & Behavioral Analytics */}
         <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-pink-500 transition-colors group">
           <TrendingUp className="w-12 h-12 text-pink-500 mb-4 group-hover:scale-110 transition-transform" />
-          <h3 className="text-2xl font-bold mb-2">CRO & Retention Strategy</h3>
+          <h3 className="text-2xl font-bold mb-2">Behavioral Analytics &amp; CRO</h3>
           <p className="text-gray-400">
-            Specialized in E-commerce audits. I redesign stores not just to look good, but to maximize "Time on Site" and conversion rates.
+            Conversion Rate Optimization grounded in cognitive load theory. I audit digital interfaces to minimize friction and maximize decision throughput &mdash; the same principles I apply when designing XAI dashboards for my research systems.
           </p>
         </div>
 
-        {/* Project 2 */}
+        {/* Motion Design for Research */}
         <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-pink-500 transition-colors group">
           <Video className="w-12 h-12 text-orange-500 mb-4 group-hover:scale-110 transition-transform" />
-          <h3 className="text-2xl font-bold mb-2">Motion Information Design</h3>
+          <h3 className="text-2xl font-bold mb-2">Technical Motion Design</h3>
           <p className="text-gray-400">
-            Expert in After Effects & Premiere. I create explanatory animations and diagrams that capture attention in the short-form content era.
+            After Effects and Premiere Pro workflows for visualizing complex AI architectures, network topologies, and data flow diagrams. I animate the systems I build &mdash; turning ensemble model pipelines and SHAP attribution maps into visual narratives for conference presentations and papers.
           </p>
         </div>
 
-        {/* Project 3 */}
-        <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-pink-500 transition-colors group">
+        {/* Abstract Art & Generative Design */}
+        <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-pink-500 transition-colors group md:col-span-2">
           <Paintbrush className="w-12 h-12 text-green-500 mb-4 group-hover:scale-110 transition-transform" />
-          <h3 className="text-2xl font-bold mb-2">Abstract Art</h3>
+          <h3 className="text-2xl font-bold mb-2">Abstract Art &amp; Generative Aesthetics</h3>
           <p className="text-gray-400">
-             A painter at heart. My background in abstract art informs my digital design choices, creating depth and emotion in UI.
+            A painter and digital artist. My practice in abstract composition directly informs how I design data visualizations, UI hierarchies, and the 3D particle field on this portfolio&apos;s landing page. Art isn&apos;t decoration &mdash; it&apos;s a trained intuition for spatial relationships and visual weight that transfers directly to Human-Computer Interaction design.
           </p>
         </div>
 

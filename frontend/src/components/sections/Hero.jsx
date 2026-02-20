@@ -5,7 +5,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link"; 
+import Link from "next/link";
 import CyberField from "../canvas/CyberField";
 import { Phone, Mail, Copy, Check, GraduationCap, Briefcase, Globe, Server } from "lucide-react";
 
@@ -67,8 +67,8 @@ const Divider = () => <span className="hidden md:block text-gray-700 mx-4">|</sp
 export default function Hero() {
   return (
     <section className="relative w-full h-screen bg-black overflow-hidden flex flex-col">
-      <LanguageModule /> {/* <--- NEW ADDITION */}
-      
+      <LanguageModule />
+
       <div className="absolute inset-0 z-0 opacity-60">
         <Canvas camera={{ position: [0, 0, 8], fov: 40 }}>
           <Suspense fallback={null}><CyberField /></Suspense>
@@ -78,7 +78,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10 pointer-events-none" />
 
       <div className="relative z-20 flex-grow flex flex-col items-center justify-center text-center px-4">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -87,32 +87,32 @@ export default function Hero() {
           BOUARDI HOUSSAM
         </motion.h1>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
           className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0"
         >
-          <RoleLink href="/cybersecurity" text="Cybersecurity Engineer" color="text-sky-400" />
+          <RoleLink href="/cybersecurity" text="Edge AI & Cybersecurity" color="text-sky-400" />
           <Divider />
-          <RoleLink href="/automation" text="Automation & AI" color="text-purple-400" />
+          <RoleLink href="/automation" text="Local AI Systems" color="text-purple-400" />
           <Divider />
-          <RoleLink href="/development" text="SaaS & Dev" color="text-green-400" />
+          <RoleLink href="/development" text="Deep Tech Engineering" color="text-green-400" />
           <Divider />
-          <RoleLink href="/creative" text="Creative Director" color="text-pink-400" />
+          <RoleLink href="/creative" text="HCI & Visualization" color="text-pink-400" />
         </motion.div>
 
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
           className="mt-12 text-gray-400 text-lg font-light tracking-wide"
         >
-          Designing Resilience. Automating the Boring.
+          PhD Researcher. CNRST Scholar. I build what I theorize.
         </motion.p>
       </div>
 
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 0.8 }}

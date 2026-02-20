@@ -1,7 +1,7 @@
 // frontend/src/app/automation/page.js
 
 import Link from "next/link";
-import { Bot, ArrowLeft, Workflow, Mail, Cpu } from "lucide-react";
+import { Bot, ArrowLeft, Workflow, BookOpen, Cpu, Eye } from "lucide-react";
 
 export default function AutomationPage() {
   return (
@@ -12,39 +12,47 @@ export default function AutomationPage() {
       </Link>
 
       <div className="border-l-4 border-purple-500 pl-6 mb-16">
-        <h1 className="text-5xl font-bold mb-4 text-purple-500">Automation & AI</h1>
+        <h1 className="text-5xl font-bold mb-4 text-purple-500">Local AI Systems</h1>
         <p className="text-xl text-gray-400 max-w-2xl">
-          "If it feels robotic, a robot should do it." <br/>
-          I build complex workflows to remove human error and save thousands of hours.
+          Every system I build runs locally. No cloud APIs. No recurring costs. No data leaving the machine. Privacy-first AI that I own, control, and deploy on my own hardware.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        {/* Project 1 */}
+
+        {/* Grader_SaaS */}
         <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-purple-500 transition-colors group">
-          <Mail className="w-12 h-12 text-purple-500 mb-4 group-hover:scale-110 transition-transform" />
-          <h3 className="text-2xl font-bold mb-2">6-Month Email Loop</h3>
+          <Eye className="w-12 h-12 text-purple-500 mb-4 group-hover:scale-110 transition-transform" />
+          <h3 className="text-2xl font-bold mb-2">Grader_SaaS &mdash; XAI Grading Engine</h3>
           <p className="text-gray-400">
-            A complex follow-up system that tracks responses, adjusts templates, and manages leads automatically for half a year without human input.
+            Human-in-the-loop AI grading system with full Explainable AI. It doesn&apos;t just assign a mark &mdash; it generates a transparent reasoning chain explaining exactly why each score was given. Self-hosted. No student data leaves the server.
           </p>
         </div>
 
-        {/* Project 2 */}
-        <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-purple-500 transition-colors group">
-          <Workflow className="w-12 h-12 text-pink-500 mb-4 group-hover:scale-110 transition-transform" />
-          <h3 className="text-2xl font-bold mb-2">n8n Home Lab</h3>
-          <p className="text-gray-400">
-            Self-hosted automation infrastructure (n8n) managing personal data streams, alert systems, and server health checks.
-          </p>
-        </div>
-
-        {/* Project 3 */}
+        {/* Alfred_Assistant */}
         <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-purple-500 transition-colors group">
           <Bot className="w-12 h-12 text-sky-500 mb-4 group-hover:scale-110 transition-transform" />
-          <h3 className="text-2xl font-bold mb-2">Academic AI Agents</h3>
+          <h3 className="text-2xl font-bold mb-2">Alfred_Assistant &mdash; Local AI Agent</h3>
           <p className="text-gray-400">
-            Created automated scripts for Systematic Literature Reviews, parsing thousands of papers to accelerate PhD research.
+            A personal AI assistant running entirely on local hardware. Computer vision, task integration, and natural language &mdash; zero API costs. Proof that you don&apos;t need OpenAI&apos;s billing page to build useful intelligence.
+          </p>
+        </div>
+
+        {/* Wisdom-Synthesizer */}
+        <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-purple-500 transition-colors group">
+          <BookOpen className="w-12 h-12 text-green-500 mb-4 group-hover:scale-110 transition-transform" />
+          <h3 className="text-2xl font-bold mb-2">Wisdom-Synthesizer &mdash; PDF-to-Audio Pipeline</h3>
+          <p className="text-gray-400">
+            An AI pipeline that ingests PDFs, structures content hierarchically, and generates audiobooks delivered directly to my phone. Converts research papers into consumable audio for commute-time learning.
+          </p>
+        </div>
+
+        {/* n8n Home Lab */}
+        <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-2xl hover:border-purple-500 transition-colors group">
+          <Workflow className="w-12 h-12 text-pink-500 mb-4 group-hover:scale-110 transition-transform" />
+          <h3 className="text-2xl font-bold mb-2">n8n Orchestration Lab</h3>
+          <p className="text-gray-400">
+            Self-hosted n8n instance orchestrating data streams, automated alerts, server health monitoring, and cross-system integrations. The backbone that connects every local AI project into a unified infrastructure.
           </p>
         </div>
 
